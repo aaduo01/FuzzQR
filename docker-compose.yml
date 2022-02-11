@@ -1,6 +1,8 @@
 version: '3.1'
 
 services:
+- name: Build and push Docker images
+  uses: docker/build-push-action@v2.9.0
   gpgen:
     container_name: FakeGreenPassGenerator
     build: ./FakeGreenPassGenerator
